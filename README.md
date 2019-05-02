@@ -31,7 +31,7 @@ The source code for this project is quite simple.  It's pretty much the unit tes
     1. Checkout _your_ repository
     1. Build the source code using a maven stage
         1. To use maven in a pipeline you need to have access to the `mvn` command, which is provided through a Tool Configuration in Jenkins.  See [the snippet](#maven-pipeline-build-snippet) below for a sample snippet.
-    1. Report the unit test results.  See the [Jenkins tutorial](https://jenkins.io/doc/pipeline/tour/tests-and-artifacts/) on how to do this.
+    1. Report the unit test results.  See the [Jenkins tutorial](https://jenkins.io/doc/pipeline/tour/tests-and-artifacts/) on how to do this.  Note that the tutorial shows two versions of the pipeline syntax.  By default it shows the Declarative pipeline syntax (which uses `stages` and `post` syntax).  However we're using the scripted syntax.  There is a link to show the scripted syntax.  Use that syntax (i.e. no `stages` or `post` keywords).
 1. To do so, you will need to:
     1. Change the [build_pipeline.groovy](docker/dsl/build_pipeline.groovy) to use your repository
     1. Modify your [Jenkinsfile](Jenkinsfile) appropriately. 
