@@ -8,7 +8,7 @@ as code.  You will write pipeline jobs using the Groovy DSL and create those job
 ## Getting Started:
 
 1. Copy the starter code from here into a new, private repository in your personal GitHub account using [these instructions](https://github.com/jschmersal-cscc/lab0-completing-and-submitting-assignments) substituting this repository URL ``https://github.com/jschmersal-cscc/special-topics-labs-ci`` for the one referenced in that document.  When adding a collaborator, be sure to add me ("jschmersal-cscc").
-2. Create a new branch for your code changes as described in [these instructions](https://github.com/jeff-anderson-cscc/submitting-assignments-lab#before-you-start-coding)
+2. Create a new branch for your code changes as described in [these instructions](https://github.com/jschmersal-cscc/lab0-completing-and-submitting-assignments#important-before-you-start-coding)
 
 ## Understanding the Starter Code
 This repository contains all you need to have a fully dockerized Jenkins that supports a DSL seed job and 
@@ -55,8 +55,8 @@ Note that you should change this to be your github repo url before finally pushi
 
 ## Submitting Your Work
 
-1. Create a pull request for your branch using [these instructions](https://github.com/jeff-anderson-cscc/submitting-assignments-lab#once-you-are-ready-to-submit-your-work-for-grading)
-1. Submit the assignment in Blackboard as described in [these instructions](https://github.com/jeff-anderson-cscc/submitting-assignments-lab#once-your-pull-request-is-created-and-i-am-added-as-a-reviewer)
+1. Create a pull request for your branch using [these instructions](https://github.com/jschmersal-cscc/lab0-completing-and-submitting-assignments#push-your-changes-and-create-a-pull-request-for-grading)
+1. Submit the assignment in Blackboard as described in [these instructions](https://github.com/jschmersal-cscc/lab0-completing-and-submitting-assignments#once-your-pull-request-is-reviewed-and-approved)
 
 __NOTE: I will provide feedback via. comments in your pull request.__
 If you need to amend your work after you issue your initial pull request:
