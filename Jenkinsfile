@@ -15,6 +15,6 @@ node {
   // you should add a test report he
   stage('UnitTest') {
       echo "hello test"
-        junit 'target/surefire-reports'
+        target/surefire-reports
         }
   }
