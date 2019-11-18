@@ -2,7 +2,7 @@
 node {
   stage('checkout sources') {
         // You should change this to be the appropriate thing
-        git url: 'https://github.com/jschmersal-cscc/special-topics-labs-ci'
+        git url: 'https://github.com/pparasuram/special-topics-labs-ci'
   }
 
   stage('Build') {
