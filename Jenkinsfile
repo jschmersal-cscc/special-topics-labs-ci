@@ -14,6 +14,6 @@ node {
   }
   // you should add a test report he
   stage('UnitTest') {
-        junit 'target/surefire-reports/*.xml'
+        junit 'target/surefire-reports'
         }
   }
