@@ -18,6 +18,6 @@ node {
             sh 'mvn test'
         }
     } finally {
-        junit 'build/reports/**/*.xml'
+        junit 'build/surefire-reports/**/*.xml'
     }
 }
