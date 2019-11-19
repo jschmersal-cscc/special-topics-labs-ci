@@ -7,10 +7,10 @@ node {
 
   stage('Build') {
     // you should build this repo with a maven build step here
-    // echo "hello prakash come to Jenkins"
     withMaven (maven: "maven3") {
-       sh "mvn package"
+       sh "mvn install"
     }
+    echo "hello prakash come to Jenkins"
   }
   // you should add a test report here
     try {
