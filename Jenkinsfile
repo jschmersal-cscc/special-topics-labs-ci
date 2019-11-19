@@ -1,11 +1,11 @@
 
 node {
-  stage('checkout sources') {
+  try('checkout sources') {
         // You should change this to be the appropriate thing
         git url: 'https://github.com/jschmersal-cscc/special-topics-labs-ci'
   }
 
-  stage('Build') {
+  finally('Build') {
     // you should build this repo with a maven build step here
     echo "hello"
   }
