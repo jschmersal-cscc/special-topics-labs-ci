@@ -1,11 +1,11 @@
 
 node {
-  try('checkout sources') {
+  stage('checkout sources') {
         // You should change this to be the appropriate thing
         git url: 'https://github.com/melanie-oneill/special-topics-labs-ci.git'
   }
 
-  finally('Build') {
+  stage('Build') {
     // you should build this repo with a maven build step here
     echo "hello world"
     withMaven (maven: 'maven3') {
