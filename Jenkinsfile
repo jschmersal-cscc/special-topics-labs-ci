@@ -7,10 +7,10 @@ node {
 
   stage('Build') {
     // you should build this repo with a maven build step here
-    withMaven (maven: "maven3") {
-       sh 'mvn test'
+    withMaven (maven: 'maven3') {
+       sh "mvn install"
     }
-    echo "hello prakash come to Jenkins"
+    echo "hello prakash clueless Jenkins"
   }
   // you should add a test report here
     try {
@@ -18,6 +18,6 @@ node {
             sh 'mvn test'
         }
     } finally {
-        junit 'build/surefire-reports/**/*.xml'
+        junit 'target/surefire-reports/**/*.xml'
     }
 }
