@@ -12,9 +12,17 @@ node {
           sh "mvn package"
         }
   }
-  // you should add a test report he
-  stage('UnitTest') {
+  
+  node{
+    try{
+      stage('UnitTest') {
+        withMaven (maven: 'maven3') {
+          sh "mvn test"
+        }
+      }
+    }finally{
       echo "hello test"
-        target/surefire-reports
+        junit 'target/surefire-reports/**/*.xml'
         }
   }
+}
