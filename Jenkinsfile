@@ -12,8 +12,6 @@ node {
           sh "mvn package"
         }
   }
-  
-  node{
     try{
       stage('UnitTest') {
         withMaven (maven: 'maven3') {
@@ -25,4 +23,3 @@ node {
         junit 'target/surefire-reports/**/*.xml'
         }
   }
-}
