@@ -22,4 +22,4 @@ COPY --chown=jenkins:jenkins jobs/ ${JENKINS_HOME}/jobs/
 COPY --chown=jenkins:jenkins dsl/ ${JENKINS_HOME}/dsl
 
 # Download maven to a location inside the docker image, so we can add a maven Tool location within jenkins (in init.groovy.d)
-RUN curl -o ${JENKINS_HOME}/apache-maven-3.6.1-bin.tar.gz http://mirror.cc.columbia.edu/pub/software/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
+RUN curl -o ${JENKINS_HOME}/apache-maven-3.6.3-bin.tar.gz http://mirror.cc.columbia.edu/pub/software/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
