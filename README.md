@@ -35,7 +35,7 @@ The source code for this project is quite simple.  It's pretty much the unit tes
 1. To do so, you will need to:
     1. Change the [build_pipeline.groovy](docker/dsl/build_pipeline.groovy) to use your repository
     1. Modify your [Jenkinsfile](Jenkinsfile) appropriately. 
-    1. To test your changes, you can rebuild the docker image running `./build-jenkins-image.sh` and then start your jenkins instance running `./run-jenkins-images.sh`
+    1. To test your changes, you can rebuild the docker image running `./build-jenkins-image.sh` and then start your jenkins instance running `./run-jenkins-images.sh`.  Run your `build-pipeline-job` and verify it meets the requirements.
 
 ## Hints
 1. I created a [run-jenkins.sh](run-jenkins.sh) script that will start up jenkins for you if you'd like.  You can view your Jenkins by opening Firefox within your workspace to [http://localhost:8080](http://localhost:8080).
